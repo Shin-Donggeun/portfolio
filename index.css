@@ -1,0 +1,725 @@
+.title {
+    font-family: 'ADLaM Display', 'SUIT', sans-serif;
+    font-weight: 400;
+    color: #5B8DEF;
+    font-size: 64px;
+    z-index: 2;
+    position: absolute;
+    padding: 25px 0 0 0;
+    margin: 0;
+    line-height: 1;
+    width: 486px;
+    height: 90px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'SUIT', 'ADLaM Display', sans-serif;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.progress-wrapper {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    z-index: 999;
+    transition: top 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.progress-bar-frame {
+    width: 234px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+    box-shadow: 0 0 20px rgba(91, 141, 239, 0.8);
+    padding: 1px 6px;
+}
+
+.progress-bar-container {
+    width: 234px;
+    height: 23px;
+    background-color: #e0e0e0;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    width: 1%;
+    background-color: #2688ff;
+    transition: width 0.1s ease-out;
+}
+
+.progress-percent {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #2688ff;
+    font-weight: bold;
+}
+
+.progress-test {
+    margin-top: 8px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    pointer-events: auto;
+}
+
+
+nav {
+    position: fixed;
+    top: 50%;
+    left: 5.5vw;
+    transform: translateY(-50%);
+    width: 7.6vw;
+    height: 60vh;
+
+    background-color: #8598ff;
+    border-radius: 999px;
+    border: none;
+    z-index: 1000;
+    box-shadow: 0 6px 30px rgba(255, 255, 255, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.navtitle {
+    position: static;
+    font-size: clamp(20px, 1.67vw, 32px);
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+
+.navbtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.navbtns .nav-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navbtns .nav-item img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbtns .nav-item span{
+    color: #f8f8f8;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 섹션1 */
+.first {
+    width: 1200px;
+    padding-top: 150px;
+    margin-bottom: 300px;
+}
+
+.firstcontents {
+    position: relative;
+    width: 1200px;
+    height: 930px;
+}
+
+.firstcontents img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.firsttext {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.firsttext p:nth-of-type(1) {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.firsttext p:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+/* 첫 섹션 끝 */
+
+.second {
+    width: 1200px;
+    height: auto;
+
+}
+
+.secondcontents {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.secondcontents>img {
+    width: 1200px;
+    height: auto;
+    z-index: 3;
+}
+
+.maintxt {
+    position: absolute;
+    top: 174px;
+    left: 94px;
+    width: 872px;
+    height: 540px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #2f2f2f;
+    z-index: 3;
+}
+
+.pfpic {
+    position: absolute;
+    top: 206px;
+    left: 1019px;
+    width: 385px;
+    height: 577px;
+    z-index: 3;
+}
+
+.skilllist {
+    position: absolute;
+    left: 159px;
+    top: 769px;
+    width: 472px;
+    height: 72px;
+    z-index: 3;
+}
+
+.namecard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 706px;
+    top: 714px;
+    background-color: #8698ff;
+    border-radius: 30px;
+    width: 634px;
+    height: 352px;
+    color: white;
+    z-index: 3;
+}
+
+.name1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 516px;
+    height: fit-content;
+    margin: 0;
+    z-index: 10;
+}
+
+.name1 p:nth-of-type(1) {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.name1 p:nth-of-type(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.name2 {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 508px;
+}
+
+.name3 {
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 451px;
+}
+
+.name4 {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 451px;
+}
+
+.morebtn {
+    width: 441px;
+    height: auto;
+    position: absolute;
+    left: 199px;
+    bottom: 23px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.more-section {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.6s ease;
+    background-color: #f6f6f6;
+    border-radius: 60px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.more-section.open {
+    height: 950px;
+    /* 실제 콘텐츠 높이에 맞게 조정 */
+}
+
+.more-content {
+    padding: 40px;
+    width: 800px;
+    color: #222222;
+    height: auto;
+}
+
+.more-content p:nth-of-type(1) {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222;
+}
+
+.more-content p:nth-of-type(2) {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.more-content p:nth-of-type(3) {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222;
+}
+
+.more-content p:nth-of-type(4) {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.more-content p:nth-of-type(5) {
+    font-weight: 800;
+    font-size: 32px;
+    color: #222;
+}
+
+.more-content p:nth-of-type(6) {
+    font-weight: 500;
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+
+/* 이하 섹션3 */
+
+.third {
+    width: 1200px;
+    height: auto;
+    margin: 300px 0 300px 0;
+    position: relative;
+
+}
+
+.thirdbg {
+    width: 1200px;
+}
+
+.thirdcontent {
+    width: 1024px;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    top: 170px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.third3-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2열 */
+    grid-template-rows: repeat(4, 1fr);
+    /* 4행 */
+    gap: 180px 60px;
+    /* row-gap column-gap */
+    width: 100%;
+    justify-items: center;
+    align-items: stretch;
+    /* 각 셀 높이 균등 분배를 위한 설정 */
+}
+
+.third3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 512px;
+    align-items: start;
+    height: 100%;
+    /* 셀 높이를 행 전체에 맞춤 */
+}
+
+.third1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.third1 img {
+    width: 72px;
+    height: 72px;
+}
+
+.third1 p {
+    margin: 0;
+    pad: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.third2 {
+    margin-left: 72px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+
+.fourth {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+
+
+.fourthbg {
+    width: 1200px;
+}
+
+.fourthcontent {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 127px;
+}
+
+.fourthright img {
+    width: 396px;
+    height: 321px;
+}
+
+.fourthleft {
+    width: 572px;
+    height: 266px;
+}
+
+.fourthleft p:nth-of-type(1) {
+    font-size: 32px;
+    font-weight: 600;
+    color: #5B8DEF;
+}
+
+.fourthleft p:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+.fourthbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 66px;
+    position: absolute;
+    top: 431px;
+    left: -55px;
+}
+
+
+.fourthbtns>a>button {
+    width: 208px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #f4f9ff;
+    color: #2f2f2f;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(133, 152, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fourthbtns p {
+    font-size: 20;
+    font-weight: 500;
+    margin-left: 175px;
+}
+
+.fifth {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.fifthbg {
+    width: 1200px;
+}
+
+.fifthbtns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 66px;
+    position: absolute;
+    top: 560px;
+    left: 235px;
+}
+
+.fifthbtns>a>button {
+    width: 208px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #f4f9ff;
+    color: #2f2f2f;
+    border: none;
+    box-shadow: 0px 4px 12px rgba(133, 152, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fifthbtns p {
+    font-size: 20;
+    font-weight: 500;
+    margin-right: 175px;
+}
+
+.fifthcontent {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 157px;
+}
+
+.fifthleft img {
+    width: 396px;
+    height: 321px;
+}
+
+.fifthright {
+    width: 572px;
+    height: 300px;
+    margin-left: 60px;
+}
+
+.fifthright p:nth-of-type(1) {
+    font-size: 32px;
+    font-weight: 600;
+    color: #5B8DEF;
+}
+
+.fifthright p:nth-of-type(2) {
+    font-size: 20px;
+    font-weight: 500;
+    color: #2f2f2f;
+}
+
+
+
+.sixth {
+    width: 1200px;
+    height: auto;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.sixthbg {
+    width: 1200px;
+}
+
+.videos {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.videos video {
+    width: 220px;             /* 정사각형 크기 */
+    height: 220px;
+    object-fit: cover;        /* 비율 무시하고 꽉 채우기 */
+    border-radius: 20px;
+    box-shadow: 
+        0px 8px 20px rgba(0, 0, 0, 0.2),
+        0px 1px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    background-color: #000;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.videos video:hover {
+    transform: scale(1.1);    /* 단순 확대 */
+    z-index: 2;               /* 살짝 위로 */
+}
+.sixthp{
+    position: absolute;
+    top: 530px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+/* 이하 푸터 */
+
+footer {
+    height: 1080px;
+    width: 100vw;
+    background: linear-gradient(to bottom, #f8f8f8 0px, #8598ff 540px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.footer1{
+    display: flex;
+    align-items: center;
+    /* width: fit-content; */
+}
+
+.footer1 img{
+    display: block;
+}
+
+.footer1:nth-of-type(1) img{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+}
+.footer1:nth-of-type(2) img{
+    height: 25px;
+    width: 32px;
+    margin-right: 20px;
+}
+.footer1:nth-of-type(3) img{
+    height: 32px;
+    width: 32px;
+    margin-right: 20px;
+}
+
+.footer1 p{
+    color: #f8f8f8;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer p span{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* 푸터 이미지 크기조절, 간격조절, and파트 */
+/* 중앙 정렬 및 수직 정렬을 위한 footer-block 래퍼 */
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 30px;
+    margin: 0 auto;
+    text-align: center;
+    height: 33vh;
+}
