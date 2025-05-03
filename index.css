@@ -161,8 +161,8 @@ nav {
 }
 
 .firstcontents img {
-    width: 100%;
-    height: 100%;
+    width: 1200px;
+    height: auto;
     display: block;
 }
 
@@ -676,7 +676,6 @@ footer {
 .footer1{
     display: flex;
     align-items: center;
-    /* width: fit-content; */
 }
 
 .footer1 img{
@@ -711,8 +710,7 @@ footer {
     font-weight: 700;
 }
 
-/* 푸터 이미지 크기조절, 간격조절, and파트 */
-/* 중앙 정렬 및 수직 정렬을 위한 footer-block 래퍼 */
+
 .footer-block {
     display: flex;
     flex-direction: column;
