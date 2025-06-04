@@ -212,6 +212,37 @@
         </div>
     </section>
 
+    <section class="fifth">
+        <p class="title">Project</p>
+        <img src="img/projectbg2.png" class="fifthbg">
+
+        <div class="fifthcontent">
+            <div class="fifthleft">
+                <img src="img/doeatappicon.png">
+            </div>
+            <div class="fifthright">
+                <p>Doeat App Redesign</p>
+                <p>직접 사용하면서 느낀점과, 조사를 통해 UX에 더 집중한 프로젝트입니다.<br><br>
+
+                    주요 사용 흐름이 분산되고, 핵심기능의 전달력이
+                    약했던 점을  <br>보완했습니다.<br>
+                    사용자 리서치를 통해 결정에 대한 고민과
+                    가격 부담을 줄여주는 <br>기능을 중심으로 구조를 재편하고,
+                    주문 정보의 흐름과 위계를 정리하여<br>
+                    사용자가 더 빠르고 직관적으로 사용할 수 있도록 설계했습니다.<br></p>
+            </div>
+        </div>
+            <div class="fifthbtns">
+                <p>2025.05. 개인 프로젝트</p>
+                <a href="img/doeat.pdf" target="_blank">
+                    <button>기획서 보기</button>
+                </a>
+                <a href="https://www.figma.com/design/IlhevBDOadIrLI9UG1JYou/%EB%91%90%EC%9E%87-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=uvBzDVxBCKGcynhb-1" target="_blank">
+                    <button>피그마 보기</button>
+                </a>
+            </div>
+    </section>
+
     <section class="fourth">
         <p class="title">Project</p>
         <img src="img/projectbg1.png" class="fourthbg">
@@ -219,10 +250,7 @@
         <div class="fourthcontent">
             <div class="fourthleft">
                 <p>New Balance_MADE line Redesign</p>
-                <p>브랜드와 사용자 사이의 긴 호흡을 그려나간 프로젝트였습니다.<br><br>
-
-                    디테일 하나, 타이밍 하나에도 의도를 담기 위해<br>
-                    반복된 피드백과 철저한 일정 관리 속에서 방향을 구체화 했습니다.<br><br>
+                <p>브랜딩에 초점을 맞춘 첫 프로젝트입니다.<br><br>
 
                     사용자에게 브랜드가 스며드는 순간에 대해 더 진지하게 고민할 수 있었고,<Br>
                     디자인이 감각을 넘어 경험이 되는 지점을 학습했습니다.</p>
@@ -246,37 +274,7 @@
 
 
 
-    <!-- <section class="fifth">
-        <p class="title">Project</p>
-        <img src="img/projectbg2.png" class="fifthbg">
 
-        <div class="fifthcontent">
-            <div class="fifthleft">
-                <img src="img/projectthumb.png">
-            </div>
-            <div class="fifthright">
-                <p>New Balance_MADE line Redesign</p>
-                <p>브랜드와 사용자 사이의 긴 호흡을 그려나간 프로젝트였습니다.<br><br>
-
-                    디테일 하나, 타이밍 하나에도 의도를 담기 위해<br>
-                    반복된 피드백과 철저한 일정 관리 속에서 방향을 구체화 했습니다.<br><br>
-
-                    사용자에게 브랜드가 스며드는 순간에 대해 더 진지하게 고민할 수 있었고,<Br>
-                    디자인이 감각을 넘어 경험이 되는 지점을 학습했습니다.</p>
-            </div>
-        </div>
-            <div class="fifthbtns">
-                <p>2025.04.~05. 개인 프로젝트</p>
-                <a>
-                    <button>기획서 보기</button>
-                </a>
-                <a>
-                    <button>웹 구현 보기</button>
-                </a>
-
-            </div>
-
-    </section> -->
 
 
     <section class="sixth">
@@ -297,9 +295,15 @@
 
     <footer>
         <div class="footer-block">
-            <div class="footer1"><img src="img/footernameicon.png"><p>UI/UX Designer<span>신동근</span></p></div>
-            <div class="footer1"><img src="img/footermailicon.png"><p>sdg1021@icloud.com</p></div>
-            <div class="footer1"><img src="img/footerphoneicon.png"><p>010-3796-3480</p></div>
+            <div class="footer1"><img src="img/footernameicon.png">
+                <p>UI/UX Designer<span>신동근</span></p>
+            </div>
+            <div class="footer1"><img src="img/footermailicon.png">
+                <p>sdg1021@icloud.com</p>
+            </div>
+            <div class="footer1"><img src="img/footerphoneicon.png">
+                <p>010-3796-3480</p>
+            </div>
         </div>
     </footer>
     <script>
@@ -361,7 +365,7 @@
             document.querySelector(".more-section").classList.toggle("open");
         });
 
-        
+
         document.querySelectorAll('.nav-item').forEach(item => {
             item.addEventListener('click', () => {
                 const targetClass = item.getAttribute('data-target');

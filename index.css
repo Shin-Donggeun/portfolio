@@ -476,7 +476,7 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 127px;
+    top: 150px;
 }
 
 .fourthright img {
@@ -577,12 +577,12 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 157px;
+    top: 170px;
 }
 
 .fifthleft img {
-    width: 396px;
-    height: 321px;
+    width: 300px;
+
 }
 
 .fifthright {
