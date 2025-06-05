@@ -658,6 +658,66 @@ nav {
 }
 
 
+.banner{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    border: rgba(38, 136, 255, 0.3) 3px solid;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:0 0 40px rgba(38, 136, 255, 0.4);
+}
+
+.banner > .title{
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+}
+
+@keyframes bannerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.banners {
+  display: flex;
+  width: max-content;
+  height: fit-content;
+  animation: bannerScroll 40s linear infinite;
+}
+
+
+.banners img {
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.banners img:last-child {
+  margin-right: 0;
+}
+
+.banners img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.mob{
+    height: 200px
+}
+
+.web{
+    height: 200px;
+}
+
+.banners img{
+    
+}
+
 /* 이하 푸터 */
 
 footer {
