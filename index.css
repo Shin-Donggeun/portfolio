@@ -581,14 +581,14 @@ nav {
 }
 
 .fifthleft img {
-    width: 300px;
+    width: 250px;
 
 }
 
 .fifthright {
     width: 572px;
     height: 300px;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .fifthright p:nth-of-type(1) {
